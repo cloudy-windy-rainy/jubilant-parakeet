@@ -2,7 +2,7 @@ print('hello world')
 
 #half_adder
 #Half_out : A XOR B (Sum same number input : 0/ Sum diffent number input : 1)
-#carry : A AND B [(binary) 1+1 = 10, carry occured]  
+#carry : A AND B [(binary) 1+1 = 10, carry occured 
 
 def half_adder(A,B):
     half_out = A^B
