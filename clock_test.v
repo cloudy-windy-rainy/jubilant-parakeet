@@ -1,24 +1,3 @@
-/*module clk_div(clk,clk1hz_out)
-
-input		clk;
-output		clk1hz_out;
-
-reg		clk;
-integer		clk1hz = 0;
-
-//1HZ Clock generation 
-
-always @(posedge(clk)) begin
-	if(cnt1hz>=499999) begin
-		cnt1hz <=0;
-		cnt1hz <=~cnt1hz;
-	end else
-		cnt1hz <=cnt1hz+1;
-end
-assign clk1hz_out = clk1hz;
-
-endmodule	
-*/
 `timescale 1ns / 1ps
 
 module clock_divider(clk, divided_clk);
